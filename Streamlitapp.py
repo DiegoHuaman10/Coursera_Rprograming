@@ -9,6 +9,6 @@ from datetime import time
 #st.write("Esta agendado para:", appointment)
 
 
-n = st.slider("n", 5,100, step=1)
+n = st.slider("Eyvind, no preguntes weas", 5,100, step=1)
 chart_data = pd.DataFrame(np.random.randn(n),columns=['data'])
 st.line_chart(chart_data)
