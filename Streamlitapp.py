@@ -8,7 +8,7 @@ from datetime import time
 #value=(time(11, 30), time(12, 45)))
 #st.write("Esta agendado para:", appointment)
 
-st.title("¿Guapo o inteligente?")
+st.title("Gráfico")
 n = st.slider("n", 5,100, step=1)
 chart_data = pd.DataFrame(np.random.randn(n),columns=['data'])
 st.line_chart(chart_data)
