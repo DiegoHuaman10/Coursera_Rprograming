@@ -3,12 +3,11 @@ import pandas as pd
 import numpy as np
 from datetime import time
 
-#appointment = st.slider(
-#"Programe la asesoria:",
-#value=(time(11, 30), time(12, 45)))
-#st.write("Esta agendado para:", appointment)
+import streamlit as st
+import pandas as pd
+import numpy as np
+from datetime import time
 
-
-n = st.slider("n", 5,100, step=1)
-chart_data = pd.DataFrame(np.random.randn(n),columns=['data'])
-st.line_chart(chart_data)
+st.title("Licenciamiento Institucional")
+st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional de las Universidades peruanas. Incluye información de región y tipo de entidad.")
+st.text("[Dar un contexto---alguién puede ir escribiendo esto bien referenciado]")
