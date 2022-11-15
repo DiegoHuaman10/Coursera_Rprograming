@@ -13,5 +13,6 @@ st.text("[Dar un contexto---alguién puede ir escribiendo esto bien referenciado
  # filename = 'Licenciamiento Institucional_7.csv'
  # urllib.request.urlretrieve(url, filename)
 #download_data()
-a = pd.read_csv('https://github.com/DiegoHuaman10/Proyecto-Prograavanzada/blob/main/Licenciamiento%20Institucional_7.csv')
-print(a)
+
+file = pd.read_csv("Licenciamiento Institucional_7.csv")
+print(file)
