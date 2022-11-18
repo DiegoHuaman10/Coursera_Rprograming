@@ -16,6 +16,7 @@ st.text("Mostrar al público qué instituciones del país son licenciadas por la
 #download_data()
 
 file = pd.read_csv("LicenciamientoInstitucional_7.csv")
+
 print(file)
 
        
