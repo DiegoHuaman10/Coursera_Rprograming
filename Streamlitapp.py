@@ -14,7 +14,7 @@ url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/m
 #download_data()
 
 file = pd.read_csv(url, sep= ',')
+st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
-print(file)
 
        
