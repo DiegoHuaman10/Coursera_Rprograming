@@ -27,4 +27,4 @@ st.subheader("Estado de Licenciamiento")
 st.write("[Agregar texto]")
 url3:"https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/estado%20de%20licenciamiento.csv"
 file3 = pd.read_csv(url3, sep= ',')
-st.line_chart(data=file3, x="NOMBRE", y="ESTADO_LICENCIAMIENTO")
+st.line_chart(data=file3, x='NOMBRE', y='ESTADO_LICENCIAMIENTO')
