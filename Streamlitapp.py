@@ -22,9 +22,16 @@ url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/ma
 file2 = pd.read_csv(url2, sep= ',')
 st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
 
-
+# Estado de licenciamiento
 st.subheader("Estado de Licenciamiento")
 st.write("[Agregar texto]")
 url3='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/estado%20de%20licenciamiento.csv'
 file3 = pd.read_csv(url3, sep= ',')
 st.line_chart(data=file3, x='NOMBRE', y='ESTADO_LICENCIAMIENTO')
+
+#Ubicación de universidades por regiones
+st.subheader("Ubicación de universidades por regiones")
+st.write("[Agregar texto]")
+url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/Ubicaci%C3%B3n.csv'
+file4 = pd.read_csv(url4, sep= ',')
+st.map(file4)
