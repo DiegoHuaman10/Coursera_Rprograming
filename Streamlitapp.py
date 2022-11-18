@@ -14,5 +14,5 @@ st.text("[Dar un contexto---alguién puede ir escribiendo esto bien referenciado
  # urllib.request.urlretrieve(url, filename)
 #download_data()
 
-file = pd.read_csv("Licenciamiento Institucional_7.csv")
+file = pd.read_csv("LicenciamientoInstitucional_7.csv")
 print(file)
