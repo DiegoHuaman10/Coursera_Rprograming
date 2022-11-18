@@ -13,7 +13,7 @@ url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/m
 # urllib.request.urlretrieve(url, filename)
 #download_data()
 
-file = pd.read_csv(url, sep= ';')
+file = pd.read_csv(url, sep= ',')
 
 print(file)
 
