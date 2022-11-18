@@ -19,12 +19,9 @@ st.text(
 file = pd.read_csv("LicenciamientoInstitucional_7.csv")
 print(file)
 
-text_input = st.text_input(
-        "Sugerencias👇",
-        label_visibility=st.session_state.visibility,
-        disabled=st.session_state.disabled,
-        placeholder=st.session_state.placeholder,
+st.text_input(
+        "Placeholder for the other text input widget",
+        "This is a placeholder",
+        key="placeholder",
 )
-
-        
        
