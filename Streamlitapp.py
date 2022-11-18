@@ -9,10 +9,9 @@ st.write("Mostrar al público qué instituciones del país son licenciadas por l
 
 
 url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
-# filename = 'Licenciamiento Institucional_7.csv'
-# urllib.request.urlretrieve(url, filename)
-#download_data()
 
+st.subheader("Periodo de Licenciamiento")
+st.write("[Agregar texto]")
 file = pd.read_csv(url, sep= ',')
 st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
