@@ -21,4 +21,10 @@ st.write("[Agregar texto]")
 url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/universidades_por_regiones.csv'
 file2 = pd.read_csv(url2, sep= ',')
 st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
-       
+
+
+st.subheader("Estado de Licenciamiento")
+st.write("[Agregar texto]")
+url3:"https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/estado%20de%20licenciamiento.csv"
+file = pd.read_csv(url3, sep= ',')
+st.line_chart(data=file, x="NOMBRE", y="ESTADO_LICENCIAMIENTO")
