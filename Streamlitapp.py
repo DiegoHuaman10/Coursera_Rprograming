@@ -11,7 +11,7 @@ st.write("¿Cómo desea revisar la información?")
 st.button("Por ubicación")
 
 if st.button("Por el tipo de gestión"):
-  st.selectbox("Universidades Privadas","Universidades Nacionales")
+  option=st.selectbox("Universidades Privadas","Universidades Nacionales")
 
 
 url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
