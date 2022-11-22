@@ -36,6 +36,6 @@ url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/ma
 file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
 
-tab1, tab2 = st.tabs(["Tab 1", "Tab 2"])
-tab1.write("U. Privadas")
-tab2.write("U. Públicas")
+tab1, tab2 = st.tabs(["Universidades Privadas", "Universidades Nacionales"])
+tab1.write("Aquí poner un seleccionador")
+tab2.write("Aquí poner un seleccionador")
