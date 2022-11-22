@@ -8,10 +8,12 @@ st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional d
 st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante")
 
 st.write("¿Cómo desea revisar la información?")
-st.button("Por ubicación")
+st.subheader("Por ubicación")
+option=st.selectbox("San Martín","Lima","...")
 
-if st.button("Por el tipo de gestión"):
-  option=st.selectbox("Universidades Privadas","Universidades Nacionales")
+st.subheader("Por el tipo de gestión")
+option=st.selectbox("Universidades Privadas","Universidades Nacionales")
+
 
 
 url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
