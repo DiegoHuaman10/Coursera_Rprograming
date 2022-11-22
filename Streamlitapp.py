@@ -4,8 +4,8 @@ import numpy as np
 
 
 st.title("Licenciamiento Institucional")
-st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional de las universidades peruanas. Incluye información de región y tipo de entidad.")
-st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante.")
+st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional de las Universidades peruanas. Incluye información de región y tipo de entidad.")
+st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante")
 
 
 url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
@@ -13,7 +13,7 @@ url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/m
 st.subheader("Periodo de Licenciamiento")
 st.write("[Agregar texto]")
 file = pd.read_csv(url, sep= ',')
-st.bar_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
+st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
 #Universidades por regiones
 st.subheader("Universidades por regiones")
@@ -35,3 +35,7 @@ st.write("[Agregar texto]")
 url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/Ubicaci%C3%B3n.csv'
 file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
+
+tab1, tab2 = st.tabs(["Tab 1", "Tab 2"])
+tab1.write("U. Privadas")
+tab2.write("U. Públicas")
