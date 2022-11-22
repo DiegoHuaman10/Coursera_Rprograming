@@ -9,7 +9,7 @@ st.write("Mostrar al público qué instituciones del país son licenciadas por l
 
 st.write("¿Cómo desea revisar la información?")
 st.selectbox("Por ubicación",("Lima","..."))
-
+st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
 
 
 url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
