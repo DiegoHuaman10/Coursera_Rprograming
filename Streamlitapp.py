@@ -14,13 +14,13 @@ st.subheader("Periodo de Licenciamiento")
 st.write("[Agregar texto]")
 file = pd.read_csv(url, sep= ',')
 st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
-if st.button("Universidades por regiones"):
-  #Universidades por regiones
-  st.subheader("Universidades por regiones")
-  st.write("[Agregar texto]")
-  url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/universidades_por_regiones.csv'
-  file2 = pd.read_csv(url2, sep= ',')
-  st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
+
+#Universidades por regiones
+st.subheader("Universidades por regiones")
+st.write("[Agregar texto]")
+url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/universidades_por_regiones.csv'
+file2 = pd.read_csv(url2, sep= ',')
+st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
 
 # Estado de licenciamiento
 st.subheader("Estado de Licenciamiento")
