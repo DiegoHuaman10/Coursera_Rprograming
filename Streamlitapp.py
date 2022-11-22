@@ -13,7 +13,7 @@ url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/m
 st.subheader("Periodo de Licenciamiento")
 st.write("[Agregar texto]")
 file = pd.read_csv(url, sep= ',')
-st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
+st.bar_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
 #Universidades por regiones
 st.subheader("Universidades por regiones")
