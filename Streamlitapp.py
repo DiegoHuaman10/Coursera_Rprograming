@@ -9,7 +9,9 @@ st.write("Mostrar al público qué instituciones del país son licenciadas por l
 
 st.write("¿Cómo desea revisar la información?")
 st.button("Por ubicación")
-st.button("Por el tipo de gestión")
+
+if st.button("Por el tipo de gestión"):
+  st.selectbox("Universidades Privadas","Universidades Nacionales")
 
 
 url = "https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
