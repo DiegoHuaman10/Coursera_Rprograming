@@ -9,10 +9,9 @@ st.write("Mostrar al público qué instituciones del país son licenciadas por l
 
 st.write("¿Cómo desea revisar la información?")
 st.subheader("Por ubicación")
-option=st.selectbox("San Martín","Lima","...")
-
+st.selectbox("San Martín","Lima","...")
 st.subheader("Por el tipo de gestión")
-option=st.selectbox("Universidades Privadas","Universidades Nacionales")
+st.selectbox("Universidades Privadas","Universidades Nacionales")
 
 
 
