@@ -8,10 +8,7 @@ st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional d
 st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante")
 
 st.write("¿Cómo desea revisar la información?")
-st.subheader("Por ubicación")
-st.selectbox("San Martín","Lima","...")
-st.subheader("Por el tipo de gestión")
-st.selectbox("Universidades Privadas","Universidades Nacionales")
+st.selectbox("Por ubicación",("Lima","..."))
 
 
 
