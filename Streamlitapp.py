@@ -10,10 +10,17 @@ st.write("Mostrar al público qué instituciones del país son licenciadas por l
 st.write("¿Cómo desea revisar la información?")
 st.selectbox("Por ubicación",("AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"))
 st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
-url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
 
+if st.sidebar.button("¿Quiénes somos?"):
+	st.header("¿Quiénes somos?")
+	st.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)")
+  
+           
+    
+    
 st.subheader("Periodo de Licenciamiento")
 st.write("[Agregar texto]")
+url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
 file = pd.read_csv(url, sep= ',')
 st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
