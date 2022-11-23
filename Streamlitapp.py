@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.sidebar.["¿Quiénes somos?"]
 
 st.title("Licenciamiento Institucional")
 st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional de las Universidades peruanas. Incluye información de región y tipo de entidad.")
@@ -11,10 +12,8 @@ st.write("¿Cómo desea revisar la información?")
 st.selectbox("Por ubicación",("AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"))
 st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
 
-if st.sidebar.button("¿Quiénes somos?"):
-	st.header("¿Quiénes somos?")
-	st.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)")
-  
+
+
            
     
     
