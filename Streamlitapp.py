@@ -11,6 +11,7 @@ if st.sidebar.button("¿Quiénes somos?"):
     st.sidebar.subheader("Eyvind Herrera...")
 
 if st.sidebar.button("Objetivos"):
+    st.sidebar.write("Buscamos..")
 
 
 st.title("Licenciamiento Institucional")
