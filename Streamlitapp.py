@@ -3,9 +3,14 @@ import pandas as pd
 import numpy as np
 
 st.sidebar.title("Programación Avanzada")
-if st.sidebar.expander("¿Quiénes somos?"):
+if st.sidebar.button("¿Quiénes somos?"):
     st.sidebar.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)...")
     st.sidebar.subheader("Diego Huamán...")
+    st.sidebar.subheader("Solait Alejandra...")
+    st.sidebar.subheader("Verenice Sobrado...")
+    st.sidebar.subheader("Eyvind Herrera...")
+
+if st.sidebar.button("Objetivos"):
 
 
 st.title("Licenciamiento Institucional")
