@@ -3,9 +3,8 @@ import pandas as pd
 import numpy as np
 
 st.sidebar.title("Programación Avanzada")
-st.sidebar.expander("¿Quiénes somos?")
-st.sidebar.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)...")
-st.sidebar.subheader("Diego Huaman")
+with st.sidebar.expander("¿Quiénes somos?"):
+           st.sidebar.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)...")
 
 st.title("Licenciamiento Institucional")
 st.subheader("Se presenta el avance y estatus del Licenciamiento Institucional de las Universidades peruanas. Incluye información de región y tipo de entidad.")
