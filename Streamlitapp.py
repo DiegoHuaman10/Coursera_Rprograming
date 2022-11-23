@@ -4,7 +4,8 @@ import numpy as np
 
 st.sidebar.title("Programación Avanzada")
 if st.sidebar.button("¿Quiénes somos?"):
-    st.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)...")
+    st.sidebar.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH)...")
+    st.sidebar.subheader("Diego Huamán...")
 
 
 st.title("Licenciamiento Institucional")
