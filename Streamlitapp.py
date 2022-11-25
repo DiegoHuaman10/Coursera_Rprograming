@@ -33,7 +33,7 @@ filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 print (df)
 st.write("**Características del Dataset**")
-st.write(describe(df))
+st.write(describe())
            
     
     
