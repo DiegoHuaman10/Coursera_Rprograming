@@ -65,3 +65,18 @@ print(k)
 tab1, tab2 = st.tabs(["Universidades Privadas", "Universidades Nacionales"])
 tab1.write("Aquí poner un seleccionador")
 tab2.write("Aquí poner un seleccionador")
+
+
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+   st.header("**Diego Manuel Huamán Abad**")
+   #st.image("...")
+with col2:
+   st.header("**Nayeli Verenice Sobrado**")
+   #st.image("...")
+with col3:
+   st.header("**Eyvind Franscisco Herrera More**")
+   #st.image("...")
+with col4:
+   st.header("**Solait Alejandra de la cruz**")
+   #st.image("...")
