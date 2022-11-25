@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.sidebar.title("Programación Avanzada")
+st.sidebar.title("**¿Cómo desea revisar la información?**")
+st.sidebar.multiselect("Por ubicación geográfica",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
+st.sidebar.title("¿Cómo desea revisar la información?")
+st.sidebar.multiselect("Por el tipo de gestión",["PRIVADAS","NACIONALES"])
+                                                   
+    
+    
 if st.sidebar.button("¿Quiénes somos?"):
     st.sidebar.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que ha elaborado como proyecto final del curso de “Programación Avanzada”  una página web con el tema “SUNEDU - Licenciamiento Institucional ”")
     st.sidebar.subheader("Diego  Manuel Huamán Abad")
