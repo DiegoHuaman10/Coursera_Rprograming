@@ -31,7 +31,7 @@ st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
 url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
 filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
-print df
+print (df)
 st.subheader("**Características del Dataset**")
 st.write(df.describe())
            
