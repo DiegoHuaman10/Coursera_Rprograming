@@ -31,7 +31,7 @@ st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
 url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
 filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
-print df
+print(df)
 st.subheader("**Características del Dataset**")
 st.write(df.describe())
            
@@ -58,7 +58,9 @@ url3='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/ma
 file3 = pd.read_csv(url3, sep= ',')
 st.line_chart(data=file3, x='NOMBRE', y='ESTADO_LICENCIAMIENTO')
 
-
+#frfnejkbnrjf
+k=df.loc[df.loc[:,'PERIODO_LICENCIAMIENTO']>0]
+print(k)
 tab1, tab2 = st.tabs(["Universidades Privadas", "Universidades Nacionales"])
 tab1.write("Aquí poner un seleccionador")
 tab2.write("Aquí poner un seleccionador")
