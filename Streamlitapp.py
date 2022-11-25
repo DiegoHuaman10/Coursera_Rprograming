@@ -32,8 +32,7 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 print (df)
-st.write("**Características del Dataset**")
-st.write(describe())
+
            
     
     
