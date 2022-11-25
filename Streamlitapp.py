@@ -8,20 +8,12 @@ st.sidebar.title("¿Cómo desea revisar la información?")
 st.sidebar.multiselect("Por el tipo de gestión",["PRIVADAS","NACIONALES"])
                                                    
     
-    
-if st.sidebar.button("¿Quiénes somos?"):
-    st.sidebar.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que ha elaborado como proyecto final del curso de “Programación Avanzada”  una página web con el tema “SUNEDU - Licenciamiento Institucional ”")
-    st.sidebar.subheader("Diego  Manuel Huamán Abad")
-    st.sidebar.subheader("Solait Alejandra De La Cruz Reyes")
-    st.sidebar.subheader(" Neyeli Verenice Sobrado Vergara")
-    st.sidebar.subheader("Eyvind Francisco Herrera More")
-
-if st.sidebar.button("Objetivos"):
-    st.sidebar.write("Buscamos crear una página interactiva y de fácil comprensión para nuestro usuario  con la Dataset de SUNEDU - Licenciamiento Institucional poniendo en práctica todo lo aprendido en el curso de Programación Avanzada.")
 
 
 st.title("Licenciamiento Institucional")
 st.write("**Se presenta el avance y estatus del Licenciamiento Institucional de las Universidades peruanas. Incluye información de región y tipo de entidad.**")
+st.write("**Objetivo**")
+st.write("Buscamos crear una página interactiva y de fácil comprensión para nuestro usuario  con la Dataset de SUNEDU - Licenciamiento Institucional poniendo en práctica todo lo aprendido en el curso de Programación Avanzada.")
 st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante")
 
 #Ubicación de universidades por regiones
