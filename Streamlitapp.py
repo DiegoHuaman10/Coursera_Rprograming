@@ -28,12 +28,19 @@ st.write("**¿Cómo desea revisar la información?**")
 st.selectbox("Por ubicación",("AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"))
 st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
 
-url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
-filename="LicenciamientoInstitucional_7_2.csv"
-df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
-print (df)
-
+@st.experimental_memo
+def download_data():
+    url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
+    filename="LicenciamientoInstitucional_7_2.csv"
+    df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
+    return df
+c=download_data()
+st.write('Dimensiones: ' + str(c.shape[0]) + ' filas y ' + str(c.shape[1]) + ' columnas')
+st.dataframe(c)
+st.write("**Características del Dataset**")
+st.write(c.describe())
            
+    
     
     
     
