@@ -28,12 +28,14 @@ st.write("**¿Cómo desea revisar la información?**")
 st.selectbox("Por ubicación",("AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"))
 st.selectbox("Por el tipo de gestión",("PRIVADAS","NACIONALES"))
 
-url="http://server01.labs.org.pe:2005/datos_horarios_contaminacion_lima.csv"
+url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
 filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
-
-
+print df
+st.subheader("Características del Dataset")
+st.write(c.describe())
            
+    
     
     
 st.subheader("Periodo de Licenciamiento")
