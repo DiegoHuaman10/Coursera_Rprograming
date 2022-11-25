@@ -34,11 +34,11 @@ def download_data():
     filename="LicenciamientoInstitucional_7_2.csv"
     df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
     return df
-c=download_data()
-st.write('Dimensiones: ' + str(c.shape[0]) + ' filas y ' + str(c.shape[1]) + ' columnas')
-st.dataframe(c)
+data=download_data()
+st.write("**Tabla de datos generales**")
+st.dataframe(data)
 st.write("**Características del Dataset**")
-st.write(c.describe())
+st.write(data.describe())
            
     
     
