@@ -11,7 +11,7 @@ if st.sidebar.button("¿Quiénes somos?"):
     st.sidebar.subheader("Eyvind Herrera...")
 
 if st.sidebar.button("Objetivos"):
-    st.sidebar.write("Buscamos..")
+    st.sidebar.write("Buscamos crear una página web con la Dataset de SUNEDU - Licenciamiento Institucional que sea interactiva y de fácil comprensión para nuestro usuario poniendo en práctica todo lo aprendido en el curso de Programación Avanzada .")
 
 
 st.title("Licenciamiento Institucional")
