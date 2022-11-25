@@ -62,12 +62,20 @@ st.line_chart(data=file3, x='NOMBRE', y='ESTADO_LICENCIAMIENTO')
 #frfnejkbnrjf
 k=df.loc[df.loc[:,'PERIODO_LICENCIAMIENTO']>0]
 print(k)
-tab1, tab2 = st.tabs(["Universidades Privadas", "Universidades Nacionales"])
-tab1.write("Aquí poner un seleccionador")
-tab2.write("Aquí poner un seleccionador")
 
-
-video_file = open('https://www.youtube.com/watch?v=8_Rp9T7l1nI')
-video_bytes = video_file.read()
-
-st.video(video_bytes)
+st.write("--------------------------------------------------------------------------------------------------------------------------")
+st.subheader("¿Quiénes somos?")
+st.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que ha elaborado como proyecto final del curso de “Programación Avanzada”  una página web con el tema “SUNEDU - Licenciamiento Institucional ”")
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+   st.write("**Diego Manuel Huamán Abad**")
+   #st.image("...")
+with col2:
+   st.write("**Nayeli Verenice Sobrado**")
+   #st.image("...")
+with col3:
+   st.write("**Eyvind Franscisco Herrera More**")
+   #st.image("...")
+with col4:
+   st.write("**Solait Alejandra de la cruz**")
+   #st.image("...")
