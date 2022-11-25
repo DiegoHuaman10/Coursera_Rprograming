@@ -67,16 +67,7 @@ tab1.write("Aquí poner un seleccionador")
 tab2.write("Aquí poner un seleccionador")
 
 
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-   st.header("**Diego Manuel Huamán Abad**")
-   #st.image("...")
-with col2:
-   st.header("**Nayeli Verenice Sobrado**")
-   #st.image("...")
-with col3:
-   st.header("**Eyvind Franscisco Herrera More**")
-   #st.image("...")
-with col4:
-   st.header("**Solait Alejandra de la cruz**")
-   #st.image("...")
+video_file = open('https://www.youtube.com/watch?v=8_Rp9T7l1nI')
+video_bytes = video_file.read()
+
+st.video(video_bytes)
