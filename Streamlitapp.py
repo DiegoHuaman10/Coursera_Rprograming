@@ -30,7 +30,13 @@ st.dataframe(df)
 st.write("**Características del Dataset**")
 st.write(df.describe())
            
-    
+  
+#video
+video_file = open('https://www.youtube.com/watch?v=qCbBoqMo7Nc')
+video_bytes = video_file.read()
+
+st.video(video_bytes)
+
     
     
 st.subheader("Periodo de Licenciamiento")
