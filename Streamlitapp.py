@@ -29,16 +29,7 @@ st.write("**Datos generales**")
 st.dataframe(df)
 st.write("**Características del Dataset**")
 st.write(df.describe())
-           
-  
-#video
-video_file = open('https://www.youtube.com/watch?v=qCbBoqMo7Nc')
-video_bytes = video_file.read()
-
-st.video(video_bytes)
-
-    
-    
+         
 st.subheader("Periodo de Licenciamiento")
 st.write("[Agregar texto]")
 url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
@@ -79,3 +70,6 @@ with col3:
 with col4:
    st.write("**Solait Alejandra de la cruz**")
    #st.image("...")
+
+  
+  
