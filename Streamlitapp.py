@@ -2,11 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.sidebar.title("**¿Cómo desea revisar la información?**")
-probar=st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
-print(probar)
-st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
-                                                   
+cdri=st.sidebar.title("**¿Cómo desea revisar la información?**")
+print(cdri)
+pug=st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
+print(pug)
+ptg=st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
+print(ptg)
+
 st.title("Licenciamiento Institucional")
 from PIL import Image
 image=Image.open("licenciamiento.jpg")
