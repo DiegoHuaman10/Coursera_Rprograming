@@ -28,7 +28,7 @@ df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 st.write("**Datos generales**")
 st.dataframe(df)
 
-df.filter(["CODIGO_ENTIDAD","NOMBRE"])
+df[(df["TIPO_GESTION"] ==PÚBLICO)]
 
            
            
