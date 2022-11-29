@@ -28,8 +28,7 @@ df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 st.write("**Datos generales**")
 st.dataframe(df)
 
-tpg_df=df["TIPO_GESTION"]==PÚBLICO
-st.dataframe(tpg_df)
+st.dataframe(tpg_df[(df["TIPO_GESTION"]==PÚBLICO)])
 
            
            
