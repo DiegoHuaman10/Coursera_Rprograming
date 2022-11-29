@@ -26,9 +26,9 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 st.write("**Datos generales**")
-st.dataframe(df)
+lk=st.dataframe(df)
 
-df.filter(["CODIGO_ENTIDAD","NOMBRE"])
+lk.filter(["CODIGO_ENTIDAD","NOMBRE"])
 
            
            
