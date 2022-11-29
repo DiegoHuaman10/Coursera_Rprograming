@@ -3,13 +3,13 @@ import pandas as pd
 import numpy as np
 
 st.sidebar.title("**¿Cómo desea revisar la información?**")
-st.sidebar.multiselect("Por ubicación geográfica",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
-st.sidebar.multiselect("Por el tipo de gestión",["PRIVADAS","NACIONALES"])
+st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
+st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
                                                    
 st.title("Licenciamiento Institucional")
-st.write("**Se presenta el avance y estatus del Licenciamiento Institucional de las Universidades peruanas. Incluye información de región y tipo de entidad.**")
 st.write("**Objetivo**")
-st.write("Buscamos crear una página interactiva y de fácil comprensión para nuestro usuario  con la Dataset de SUNEDU - Licenciamiento Institucional poniendo en práctica todo lo aprendido en el curso de Programación Avanzada.")
+st.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las Universidades peruanas incluyendo información de región y tipo de entidad.")
+st.write("**Introducción**")
 st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante")
 
 #Ubicación de universidades por regiones
@@ -17,6 +17,8 @@ st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo
 url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/Ubicaci%C3%B3n.csv'
 file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
+
+
 
 url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
 filename="LicenciamientoInstitucional_7_2.csv"
