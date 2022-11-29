@@ -28,7 +28,10 @@ df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 st.write("**Datos generales**")
 st.dataframe(df)
 
+df.filter(["NOMBRE])
 
+           
+           
   
 st.subheader("Periodo de Licenciamiento")
 st.write("[Agregar texto]")
