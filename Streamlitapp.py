@@ -8,7 +8,7 @@ st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
                                                    
 st.title("Licenciamiento Institucional")
 from PIL import Image
-image = Image.open("licenciamiento.jpeg")
+image = Image.open("licenciamiento.jpg")
 st.image(image, caption="Licenciamiento de Universidades en el Perú", use_column_width=True)
 
 st.write("**Objetivo**")
