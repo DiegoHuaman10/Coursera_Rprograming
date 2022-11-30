@@ -58,7 +58,7 @@ with tab2:
 with tab3:
    st.write("Actualmente existe al menos 1 universidad (ya sea pública o privada) en cada región del país. Esto con el objetivo de brindar un mayor acceso a la educación.")
    text_imput=st.text_input("**Ingrese el nombre de la región 👇 (en MAYÚSCULAS)**",)
-   df.loc[df.loc[:,"DEPARTAMENTO"]==text_imput]:
+
 
 with tab4:
    st.text_input("**Ingrese el nombre de la universidad 👇 (en MAYÚSCULAS)**",)
