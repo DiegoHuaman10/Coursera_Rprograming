@@ -37,9 +37,9 @@ url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/ma
 file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
 
-url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
-filename="LicenciamientoInstitucional_7_2.csv"
-df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
+url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
+filename="LicenciamientoInstitucional.csv"
+df=pd.read_csv("LicenciamientoInstitucional.csv")
 st.write("**Datos generales**")
 st.dataframe(df)
 
@@ -48,7 +48,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["**Periodo de licenciamiento**", "**Tipo de ge
 
 with tab1:
    st.write("El periodo de licenciamiento refiere a...")
-   url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
+   url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
    file = pd.read_csv(url, sep= ',')
    st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
