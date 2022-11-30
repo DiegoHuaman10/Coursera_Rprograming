@@ -5,15 +5,13 @@ from PIL import Image
 
 st.sidebar.title("**Programación Avanzada**")
 expander=st.sidebar.expander("**¿Quiénes somos?**")
-expander.write("""Somos estudiantes del V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que, 
-como parte del producto final del curso “Programación Avanzada”, elaboramos una página web con el presente tema""")
+expander.write("Somos estudiantes del V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que, como parte del producto final del curso “Programación Avanzada”, elaboramos una página web con el presente tema""")
 expander.write("**- Diego Manuel Huamán Abad**")
 expander.write("**- Nayeli Verenice Sobrado**")
 expander.write("**- Eyvind Francisco Herrera More**")
 expander.write("**- Solait Alejandra de la cruz**")
 expander=st.sidebar.expander("**Objetivo**")
-expander.write("""Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las 
-Universidades peruanas incluyendo información de región y tipo de entidad.")
+expander.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las Universidades peruanas incluyendo información de región y tipo de entidad.")
 
 #st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
 #st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
@@ -22,10 +20,7 @@ st.title("Licenciamiento Institucional")
 image=Image.open("licenciamiento.jpg")
 st.image(image, caption="Licenciamiento de Universidades en el Perú", use_column_width=True)
 
-st.write("""Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior 
-(SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, 
-además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección 
-laboral en beneficio del estudiante""")
+st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante""")
 
 #Ubicación de universidades por regiones
 st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica")
