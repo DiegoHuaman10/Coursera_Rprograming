@@ -44,7 +44,7 @@ st.write("**Datos generales**")
 st.dataframe(df)
 
 #------------------------------------------------------------------
-tab1, tab2, tab3 = st.tabs(["Periodo de Licenciamiento", "Tipo de gestión", "Buscar por regiones"])
+tab1, tab2, tab3 = st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**", "**Buscar por regiones**"])
 
 with tab1:
    st.write("El periodo de licenciamiento refiere a...")
