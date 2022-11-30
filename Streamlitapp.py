@@ -44,7 +44,7 @@ st.write("**Datos generales**")
 st.dataframe(df)
 
 #------------------------------------------------------------------
-tab1, tab2, tab3 = st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**", "**Buscar por regiones**"])
+tab1, tab2, tab3, tab4 = st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**", "**Buscar por regiones**", "**Buscar por Universidad**"])
 
 with tab1:
    st.write("El periodo de licenciamiento refiere a...")
@@ -56,12 +56,11 @@ with tab2:
    st.write("Actualmente existen ....")
 
 with tab3:
-   st.write("Actualmente existen ....")
-   url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/universidades_por_regiones.csv'
-   file2 = pd.read_csv(url2, sep= ',')
-   st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
+   st.write("Actualmente existe al menos 1 universidad (ya sea pública o privada) en cada región del país. Esto con el objetivo de brindar un mayor acceso a la educación.")
+   text_input = st.text_input("**Ingrese el nombre de la región 👇 (en MAYÚSCULAS)**",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder=st.session_state.placeholder)
 
-
+with tab4:
+   text_input = st.text_input("**Ingrese el nombre de la universidad 👇 (en MAYÚSCULAS)**",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder=st.session_state.placeholder)
 
  
   
