@@ -1,28 +1,16 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from PIL import Image
 
 st.sidebar.title("**Programación Avanzada**")
 expander=st.sidebar.expander("**¿Quiénes somos?**")
 expander.write("Somos estudiantes del V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que, como parte del producto final del curso “Programación Avanzada”, elaboramos una página web con el presente tema")
 expander.write("**Diego Huamán Abad**")
+expander.Image.open("foto.png")
 expander.write("**Nayeli Verenice Sobrado**")
 expander.write("**Eyvind Herrera More**")
 expander.write("**Solait Alejandra de la cruz**")
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-   st.write("**Diego Manuel Huamán Abad**")
-   #st.image("...")
-with col2:
-   st.write("**Nayeli Verenice Sobrado**")
-   #st.image("...")
-with col3:
-   st.write("**Eyvind Franscisco Herrera More**")
-   #st.image("...")
-with col4:
-   st.write("**Solait Alejandra de la cruz**")
-   #st.image("...")
-
 expander=st.sidebar.expander("**Objetivo**")
 expander.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las Universidades peruanas incluyendo información de región y tipo de entidad.")
 
@@ -31,7 +19,6 @@ expander.write("Crear una página interactiva para presentar el avance y estatus
 #st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
 
 st.title("Licenciamiento Institucional")
-from PIL import Image
 image=Image.open("licenciamiento.jpg")
 st.image(image, caption="Licenciamiento de Universidades en el Perú", use_column_width=True)
 
