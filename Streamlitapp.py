@@ -2,6 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+
+expander=st.sidebar.expander("**¿Quiénes somos?**")
+expander.write("...")
+
 st.sidebar.title("**¿Cómo desea revisar la información?**")
 st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
 st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
