@@ -57,10 +57,9 @@ with tab2:
 
 with tab3:
    st.write("Actualmente existe al menos 1 universidad (ya sea pública o privada) en cada región del país. Esto con el objetivo de brindar un mayor acceso a la educación.")
-   text_input = st.text_input("**Ingrese el nombre de la región 👇 (en MAYÚSCULAS)**",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder=st.session_state.placeholder)
+   st.write("**Ingrese el nombre de la región 👇 (en MAYÚSCULAS)**")
+   st.text_input()
 
 with tab4:
-   text_input = st.text_input("**Ingrese el nombre de la universidad 👇 (en MAYÚSCULAS)**",label_visibility=st.session_state.visibility,disabled=st.session_state.disabled,placeholder=st.session_state.placeholder)
-
- 
+   st.write("**Ingrese el nombre de la región 👇 (en MAYÚSCULAS)**")
   
