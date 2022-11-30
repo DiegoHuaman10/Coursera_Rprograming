@@ -44,34 +44,23 @@ st.write("**Datos generales**")
 st.dataframe(df)
 
 #------------------------------------------------------------------
+tab1, tab2, tab3 = st.tabs(["Periodo de Licenciamiento", "Tipo de gestión", "Buscar por regiones"])
 
+with tab1:
+   st.write("El periodo de licenciamiento refiere a...")
+   url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
+   file = pd.read_csv(url, sep= ',')
+   st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
-           
-           
-  
-st.subheader("Periodo de Licenciamiento")
-st.write("[Agregar texto]")
-url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional_7_2.csv"
-file = pd.read_csv(url, sep= ',')
-st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
+with tab2:
+   st.write("Actualmente existen ....")
 
-#Universidades por regiones
-st.subheader("Universidades por regiones")
-st.write("[Agregar texto]")
-url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/universidades_por_regiones.csv'
-file2 = pd.read_csv(url2, sep= ',')
-st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
+with tab3:
+   st.write("Actualmente existen ....")
+   url2='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/universidades_por_regiones.csv'
+   file2 = pd.read_csv(url2, sep= ',')
+   st.line_chart(data=file2, x='NOMBRE', y='DEPARTAMENTO')
 
-# Estado de licenciamiento
-st.subheader("Estado de Licenciamiento")
-st.write("[Agregar texto]")
-url3='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/estado%20de%20licenciamiento.csv'
-file3 = pd.read_csv(url3, sep= ',')
-st.line_chart(data=file3, x='NOMBRE', y='ESTADO_LICENCIAMIENTO')
-
-#frfnejkbnrjf
-k=df.loc[df.loc[:,'PERIODO_LICENCIAMIENTO']>0]
-print(k)
 
 
  
