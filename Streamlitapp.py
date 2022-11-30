@@ -2,14 +2,31 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
+st.sidebar.title("**Programación Avanzada**")
 expander=st.sidebar.expander("**¿Quiénes somos?**")
-expander.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que ha elaborado como proyecto final del curso de “Programación Avanzada”  una página web con el tema “SUNEDU - Licenciamiento Institucional")
+expander.write("Somos estudiantes del V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que, como parte del producto final del curso “Programación Avanzada”, elaboramos una página web con el presente tema")
+#expander.write("**Diego Huamán Abad**")
+#expander.write("**Nayeli Verenice Sobrado**")
+#expander.write("**Eyvind Herrera More**")
+#expander.write("**Solait Alejandra de la cruz**")
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+   st.write("**Diego Manuel Huamán Abad**")
+   #st.image("...")
+with col2:
+   st.write("**Nayeli Verenice Sobrado**")
+   #st.image("...")
+with col3:
+   st.write("**Eyvind Franscisco Herrera More**")
+   #st.image("...")
+with col4:
+   st.write("**Solait Alejandra de la cruz**")
+   #st.image("...")
 
 expander=st.sidebar.expander("**Objetivo**")
 expander.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las Universidades peruanas incluyendo información de región y tipo de entidad.")
 
-#st.sidebar.title("**¿Cómo desea revisar la información?**")
+
 #st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
 #st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
 
@@ -61,22 +78,6 @@ st.line_chart(data=file3, x='NOMBRE', y='ESTADO_LICENCIAMIENTO')
 k=df.loc[df.loc[:,'PERIODO_LICENCIAMIENTO']>0]
 print(k)
 
-st.write("--------------------------------------------------------------------------------------------------------------------------")
-st.subheader("¿Quiénes somos?")
-st.write("Somos un grupo de estudiantes de V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que ha elaborado como proyecto final del curso de “Programación Avanzada”  una página web con el tema “SUNEDU - Licenciamiento Institucional ”")
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-   st.write("**Diego Manuel Huamán Abad**")
-   #st.image("...")
-with col2:
-   st.write("**Nayeli Verenice Sobrado**")
-   #st.image("...")
-with col3:
-   st.write("**Eyvind Franscisco Herrera More**")
-   #st.image("...")
-with col4:
-   st.write("**Solait Alejandra de la cruz**")
-   #st.image("...")
 
-  
+ 
   
