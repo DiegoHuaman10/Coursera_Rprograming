@@ -21,6 +21,7 @@ st.write("El Licenciamiento Institucional es un procedimiento obligatorio para t
 image=Image.open("licenciamiento.jpg")
 st.image(image, caption="Licenciamiento de Universidades en el Perú", use_column_width=True)
 st.write("Mostrar al público qué instituciones del país son licenciadas por la SUNEDU es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además, garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante.")
+image=Image.open("CBC.jpg")
 
 #Ubicación de universidades por regiones
 st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica")
@@ -33,6 +34,7 @@ filename="LicenciamientoInstitucional_7_2.csv"
 df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 st.write("**Datos generales**")
 st.dataframe(df)
+
 
 
            
