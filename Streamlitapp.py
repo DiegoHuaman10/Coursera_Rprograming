@@ -17,11 +17,10 @@ expander.write("Crear una página interactiva para presentar el avance y estatus
 #st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
 
 st.title("Licenciamiento Institucional")
+st.write("El Licenciamiento Institucional es un procedimiento obligatorio para todas las universidades del país, a través del cual cada casa de estudios debe demostrar ante la SUNEDU que cumple con las Condiciones Básicas de Calidad (CBC) para poder brindar el servicio educativo. Como resultado de este proceso, ahora existe un sistema universitario más ordenado, y universidades con una mayor orientación hacia la mejora continua.")
 image=Image.open("licenciamiento.jpg")
 st.image(image, caption="Licenciamiento de Universidades en el Perú", use_column_width=True)
-placeholder = st.empty()
-with placeholder.container():
-    st.write("Mostrar al público qué instituciones del país son licenciadas por la Superintendencia Nacional de Educación Superior (SUNEDU) es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además,  garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante")
+st.write("Mostrar al público qué instituciones del país son licenciadas por la SUNEDU es importante, ya que permite conocer cuáles cumplen con las condiciones básicas de calidad, la infraestructura, además, garantiza la calidad académica y eficiencia en la formación del futuro profesional como la proyección laboral en beneficio del estudiante.")
 
 #Ubicación de universidades por regiones
 st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica")
