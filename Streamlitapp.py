@@ -3,21 +3,26 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
+#------------------------------------------------------------------
 st.sidebar.title("**Programación Avanzada**")
-expander=st.sidebar.expander("**¿Quiénes somos?**")
-expander.write("Somos estudiantes del V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que, como parte del producto final del curso “Programación Avanzada”, elaboramos una página web con el presente tema""")
-expander.write("**- Diego Manuel Huamán Abad**")
+names=st.sidebar.expander("**¿Quiénes somos?**")
+names.write("Somos estudiantes del V ciclo de Ingeniería de la Universidad Peruano Cayetano Heredia (UPCH) que, como parte del producto final del curso “Programación Avanzada”, elaboramos una página web con el presente tema""")
+names.write("**- Diego Manuel Huamán Abad**")
 foto=Image.open("foto.jpg")
-expander.image(foto)
-expander.write("**- Nayeli Verenice Sobrado**")
-expander.write("**- Eyvind Francisco Herrera More**")
-expander.write("**- Solait Alejandra de la cruz**")
-expander=st.sidebar.expander("**Objetivo**")
-expander.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las Universidades peruanas incluyendo información de región y tipo de entidad.")
+names.image(foto)
+names.write("**- Nayeli Verenice Sobrado**")
+foto=Image.open("foto.jpg")
+names.image(foto)
+names.write("**- Eyvind Francisco Herrera More**")
+foto=Image.open("foto.jpg")
+names.image(foto)
+names.write("**- Solait Alejandra de la cruz**")
+foto=Image.open("foto.jpg")
+names.image(foto)
+aim=st.sidebar.expander("**Objetivo**")
+aim.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las Universidades peruanas incluyendo información de región y tipo de entidad.")
 
-#st.sidebar.multiselect("**Por ubicación geográfica**",["AMAZONAS","ÁNCASH","APURIMAC","AREQUIPA","AYACUCHO","CAJAMARCA","CALLAO","CUSCO","HUANCAVELICA","HUANUCO","ICA","JUNIN","LA LIBERTAD","LAMBAYEQUE","LIMA","LORETO","MADRE DE DIOS","MOQUEGUA","PASCO","PIURA","PUNO","SAN MARTIN","TACNA","TUMBES","UCAYALI"])
-#st.sidebar.multiselect("**Por el tipo de gestión**",["PRIVADAS","NACIONALES"])
-
+#------------------------------------------------------------------
 st.title("Licenciamiento Institucional")
 st.write("El Licenciamiento Institucional es un procedimiento obligatorio para todas las universidades del país, a través del cual cada casa de estudios debe demostrar ante la SUNEDU que cumple con las Condiciones Básicas de Calidad (CBC) para poder brindar el servicio educativo. Como resultado de este proceso, ahora existe un sistema universitario más ordenado, y universidades con una mayor orientación hacia la mejora continua.")
 INICIO=Image.open("licenciamiento.jpg")
@@ -38,6 +43,7 @@ df=pd.read_csv("LicenciamientoInstitucional_7_2.csv")
 st.write("**Datos generales**")
 st.dataframe(df)
 
+#------------------------------------------------------------------
 
 
            
