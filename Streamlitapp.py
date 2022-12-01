@@ -23,7 +23,7 @@ aim=st.sidebar.expander("**Objetivo**")
 aim.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las universidades peruanas, incluyendo la región y tipo de entidad.")
 
 #------------------------------------------------------------------
-st.title("Licenciamiento Institucional")
+st.title("Licenciamiento Institucional del Perú")
 st.write("El Licenciamiento Institucional es un procedimiento obligatorio para todas las universidades del país; por esta razón, cada casa de estudios debe demostrar ante la SUNEDU que cumple con las Condiciones Básicas de Calidad (CBC) para poder brindar su servicio educativo. Como resultado de este proceso, ahora existe un sistema universitario más ordenado, y universidades con una mayor orientación hacia la mejora continua.")
 INICIO=Image.open("licenciamiento.jpg")
 st.image(INICIO, caption="Licenciamiento de Universidades en el Perú", use_column_width=True)
