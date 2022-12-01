@@ -56,11 +56,11 @@ with tab2:
    st.write("Actualmente existen ....")
 
 with tab3:
-   st.write("Actualmente existe al menos 1 universidad (ya sea pública o privada) en cada región del país. Esto con el objetivo de brindar un mayor acceso a la educación.")
-   text_imput=st.text_input("**Ingrese el nombre de la región 👇 (en MAYÚSCULAS)**",)
+   st.write("En la actualidad, en cada región del Perú, existe al menos 1 universidad sea pública o privada. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
+   text_imput=st.text_input("**Ingrese la región para conocer que universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df[df["DEPARTAMENTO"]==text_imput]
 
 with tab4:
-   text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad 👇 (en MAYÚSCULAS)**",)
+   text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
    df[df["SIGLAS"]==text_imput]
    
