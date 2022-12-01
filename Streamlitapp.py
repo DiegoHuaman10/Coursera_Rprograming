@@ -32,7 +32,7 @@ CBC=Image.open("CBC.jpg")
 st.image(CBC, use_column_width=True)
 
 #Ubicación de universidades por regiones
-st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica")
+st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica.")
 url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/Ubicaci%C3%B3n.csv'
 file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
