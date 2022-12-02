@@ -61,7 +61,7 @@ with tab2:
    st.write("De la misma manera, se presenta la distribución del estado de licenciamiento para la gestión **pública**, donde 47 tienen la licencia otorgada, 2 denegada, 1 con informa de observaciones y 1 en ningún caso")
    df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
    df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
-   st.bar_chart(df_gp)
+   st.altair_chart(df_gp)
 #------------------------------------------------------------------
 
 st.header("**INFORMACIÓN POR BÚSQUEDA**")
