@@ -65,5 +65,7 @@ with tab3:
    
 with tab4:
    text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
-   df[df["SIGLAS"]==text_imput]
+   df1=df[df["SIGLAS"]==text_imput]
+   st.dataframe(df1)
+   
    
