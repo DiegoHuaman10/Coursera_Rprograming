@@ -62,6 +62,7 @@ with tab3:
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df_region=df[df["DEPARTAMENTO"]==text_imput]
    st.dataframe(df_region)
+   df_region.describe()
    
    df_tg= df_region.TIPO_GESTION.value_counts()
    st.write('Distribución por el tipo de gestión:')
