@@ -52,14 +52,12 @@ with tab1:
    file = pd.read_csv(url, sep= ',')
    st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
    st.bar_chart(file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
-   l=file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 6, axis=1).sum()
-   J=file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 8, axis=1).sum()
-   N=file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 10, axis=1).sum()
-   np.array([[l, J, N],
-            [6, 8, 10]])
+
 with tab2:
    st.write("Actualmente existen ....")
-   df[df["TIPO_GESTION"]].nunique()
+   df_gestion= df.TIPO_GESTION.value_counts()
+   st.write('Distribución por el tipo de gestión:')
+   st.bar_chart(df_gestion)
 
 with tab3:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
