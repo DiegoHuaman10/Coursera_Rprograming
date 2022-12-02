@@ -71,7 +71,7 @@ with tab1:
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df_region=df[df["DEPARTAMENTO"]==text_imput]
    df_region=df_region.drop(columns=["CODIGO_ENTIDAD","SIGLAS","FECHA_INICIO_LICENCIAMIENTO","FECHA_FIN_LICENCIAMIENTO","PERIODO_LICENCIAMIENTO","UBIGEO","LATITUD","LONGITUD","FECHA_CORTE"])
-   st.dataframe(df_region)
+   #st.dataframe(df_region)
    
    st.write("Para la región",text_imput,",se presenta una distribución de las universidad por el **_tipo de gestión_**.")
    df_tg= df_region.TIPO_GESTION.value_counts()
@@ -80,7 +80,21 @@ with tab1:
    st.write("Además, se presenta una distribución del **_estado de licencimianto_** de dichas universidades.")
    df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_el)
-      
+   
+   st.write("Del mismo modo, se presenta tablas con las universidades pertenecientes a cada **_estado de licencimianto_**")
+   st.write("**Licenciamiento otorgado**")
+   df_lo=df_region[df_region["ESTADO_LICENCIAMIENTO"]=="LICENCIA OTORGADA"]
+   st.dataframe(df_lo)
+   st.write("**Licenciamiento denegada**")
+   df_lo=df_region[df_region["ESTADO_LICENCIAMIENTO"]=="LICENCIA DENEGADA"]
+   st.dataframe(df_lo)
+   st.write("**Licenciamiento con observaciones**")
+   df_lo=df_region[df_region["ESTADO_LICENCIAMIENTO"]=="LICENCIA CON INFORME DE OBSERVACIONES (IO) NOTIFICADO"]
+   st.dataframe(df_lo)
+   st.write("**Ninguno de los casos**")
+   df_lo=df_region[df_region["ESTADO_LICENCIAMIENTO"]=="NINGUNO"]
+   st.dataframe(df_lo)
+   
 with tab2:
    text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
    df_univ=df[df["SIGLAS"]==text_imput]
