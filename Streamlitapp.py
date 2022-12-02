@@ -53,12 +53,12 @@ with tab2:
    st.write("En el siguiente gráfico, se presenta una distribución de las universidades nacionales de acuerdo al tipo de gestión")
    st.bar_chart(df_gestion)
    
-   st.write("En relación a la gestión **privada**, se presenta la distribución del estado de licenciamiento")
+   st.write("En relación a la gestión **privada**, se presenta la distribución del estado de licenciamiento, en donde se observa una igualdad (46 en ambos casos)")
    df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
    df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_gp)
    
-   st.write("De la misma manera, se presenta la distribución del estado de licenciamiento para la gestión **pública**")
+   st.write("De la misma manera, se presenta la distribución del estado de licenciamiento para la gestión **pública**, donde 47 tienen la licencia otorgada, 2 denegada, 1 con informa de observaciones y 1 en ningún caso")
    df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
    df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_gp)
