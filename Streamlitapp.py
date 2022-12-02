@@ -70,7 +70,9 @@ with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df_region=df[df["DEPARTAMENTO"]==text_imput]
-   df_region.drop(["CODIGO_ENTIDAD","FECHA_INICIO_LICENCIAMIENTO", "FECHA_FIN_LICENCIAMIENTO"], axis=1)
+   df_region=df_region.drop(columns=["CODIGO_ENTIDAD","FECHA_INICIO_LICENCIAMIENTO", "FECHA_FIN_LICENCIAMIENTO"])
+   
+   #df_region.drop(["CODIGO_ENTIDAD","FECHA_INICIO_LICENCIAMIENTO", "FECHA_FIN_LICENCIAMIENTO"], axis=1)
    st.dataframe(df_region)
    
    st.write("Para la región",text_imput,",se presenta una distribución de las universidad por el **_tipo de gestión_**.")
