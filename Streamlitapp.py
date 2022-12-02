@@ -51,18 +51,17 @@ with tab1:
    url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
    file = pd.read_csv(url, sep= ',')
    st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
-   st.bar_chart(file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
-
+   #st.bar_chart(file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
+   #contar cuantas unis hay con 6 años de periodo de licenciamiento
+   l = file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 6, axis = 1)
+   print(l)
 with tab2:
    st.write("Actualmente existen ....")
-   count=df.groupby(["TIPO_GESTION"]).count()
-   print(count)
 
 with tab3:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df[df["DEPARTAMENTO"]==text_imput]
-   
    
 with tab4:
    text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
