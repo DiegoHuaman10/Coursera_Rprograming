@@ -20,7 +20,7 @@ names.write("**- Solait Alejandra de la cruz**")
 foto=Image.open("foto.jpg")
 names.image(foto)
 aim=st.sidebar.expander("**Objetivo**")
-aim.write("Crear una página interactiva para presentar el avance y estatus del Licenciamiento Institucional de las universidades peruanas, incluyendo la región y tipo de entidad.")
+aim.write("Presentar el avance y estatus del Licenciamiento Institucional de las universidades peruanas, incluyendo la región y tipo de entidad.")
 
 #------------------------------------------------------------------
 st.header("**LICENCIAMIENTO INSTITUCIONAL**")
