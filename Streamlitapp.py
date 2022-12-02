@@ -42,7 +42,7 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional.csv"
 df=pd.read_csv("LicenciamientoInstitucional.csv")
 
-st.header("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
+st.header("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**")
 tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
 with tab1:
    st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
@@ -64,7 +64,7 @@ df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
    st.bar_chart(df_gp)
 #------------------------------------------------------------------
 
-st.header("**INFORMACIÓN POR BÚSQUEDA**"):
+st.header("**INFORMACIÓN POR BÚSQUEDA**")
 tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
 with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
