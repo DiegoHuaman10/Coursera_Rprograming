@@ -64,7 +64,7 @@ if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
       st.bar_chart(df_gp)
    
 #------------------------------------------------------------------
-if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
+if st.button("**INFORMACIÓN POR BÚSQUEDA**"):
    st.subheader("**OPCIONES DE BÚSQUEDA**")
    tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
    with tab1:
