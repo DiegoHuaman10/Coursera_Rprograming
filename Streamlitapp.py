@@ -42,7 +42,7 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional.csv"
 df=pd.read_csv("LicenciamientoInstitucional.csv")
 
-st.tittle("Información general del licenciamiento")
+st.title("Información general del licenciamiento")
 tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
 with tab1:
    st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
