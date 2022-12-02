@@ -50,34 +50,34 @@ with tab1:
    st.bar_chart(df_pl)
 with tab2:
    df_gestion= df.TIPO_GESTION.value_counts()
-   st.write("En el siguiente gráfico, se presenta una distribución de las universidades nacionales de acuerdo al tipo de gestión")
+   st.write("En el siguiente gráfico, se presenta una distribución de las universidades nacionales de acuerdo al tipo de gestión.")
    st.bar_chart(df_gestion)
    
-   st.write("En relación a la gestión **privada**, se presenta la distribución del estado de licenciamiento, en donde se observa una igualdad (46 en ambos casos)")
+   st.write("En relación a la gestión **privada**, se presenta la distribución del estado de licenciamiento, en donde se observa una igualdad (46 en ambos casos).")
    df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
    df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_gp)
    
-   st.write("De la misma manera, se presenta la distribución del estado de licenciamiento para la gestión **pública**, donde 47 tienen la licencia otorgada, 2 denegada, 1 con informa de observaciones y 1 en ningún caso")
+   st.write("De la misma manera, se presenta la distribución del estado de licenciamiento para la gestión **pública**, donde 47 tienen la licencia otorgada, 2 denegada, 1 con informa de observaciones y 1 en ningún caso.")
    df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
    df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
-   st.altair_chart(df_gp)
+   st.bar_chart(df_gp)
 #------------------------------------------------------------------
 
-st.header("**INFORMACIÓN POR BÚSQUEDA**")
-tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
+st.subheader("**Información por búsqueda**")
+tab1, tab2= st.tabs(["**Por regiones**", "**Por Universidad**"])
 with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df_region=df[df["DEPARTAMENTO"]==text_imput]
    st.dataframe(df_region)
    
+   st.write("Se presenta una distribución de las universidad por el **_tipo de gestión_**")
    df_tg= df_region.TIPO_GESTION.value_counts()
-   st.write('**Distribución por el tipo de gestión:**')
    st.bar_chart(df_tg)
    
+   st.write("Además, se presenta una distribución del **_estado de licencimianto_** de dichas universidades")
    df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
-   st.write('**Distribución por el estado de licenciamiento:**')
    st.bar_chart(df_el)
       
 with tab2:
