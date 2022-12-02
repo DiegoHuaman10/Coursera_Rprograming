@@ -54,9 +54,14 @@ with tab2:
    st.write('**Distribución por el tipo de gestión:**')
    st.bar_chart(df_gestion)
    
-   #df_g=df["TIPO_GESTION"]
    df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
    df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
+   st.write('**Licenciamiento en la gestión privada:**')
+   st.bar_chart(df_gp)
+   
+   df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
+   df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
+   st.write('**Licenciamiento en la gestión pública:**')
    st.bar_chart(df_gp)
    
 #------------------------------------------------------------------
