@@ -64,25 +64,26 @@ if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
       st.bar_chart(df_gp)
    
 #------------------------------------------------------------------
-st.subheader("**OPCIONES DE BÚSQUEDA**")
-tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
-with tab1:
-   st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
-   text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
-   df_region=df[df["DEPARTAMENTO"]==text_imput]
-   st.dataframe(df_region)
+if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
+   st.subheader("**OPCIONES DE BÚSQUEDA**")
+   tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
+   with tab1:
+      st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
+      text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
+      df_region=df[df["DEPARTAMENTO"]==text_imput]
+      st.dataframe(df_region)
    
-   df_tg= df_region.TIPO_GESTION.value_counts()
-   st.write('**Distribución por el tipo de gestión:**')
-   st.bar_chart(df_tg)
+      df_tg= df_region.TIPO_GESTION.value_counts()
+      st.write('**Distribución por el tipo de gestión:**')
+      st.bar_chart(df_tg)
    
-   df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
-   st.write('**Distribución por el estado de licenciamiento:**')
-   st.bar_chart(df_el)
+      df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
+      st.write('**Distribución por el estado de licenciamiento:**')
+      st.bar_chart(df_el)
    
-with tab2:
-   text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
-   df_univ=df[df["SIGLAS"]==text_imput]
-   st.dataframe(df_univ)
+   with tab2:
+      text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
+      df_univ=df[df["SIGLAS"]==text_imput]
+      st.dataframe(df_univ)
    
    
