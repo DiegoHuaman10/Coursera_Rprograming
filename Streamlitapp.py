@@ -63,6 +63,14 @@ with tab3:
    df_region=df[df["DEPARTAMENTO"]==text_imput]
    st.dataframe(df_region)
    
+   df_tg= df.TIPO_GESTION.value_counts()
+   st.write('Distribución por el tipo de gestión:')
+   st.bar_chart(df_tg)
+   
+   df_el= df.ESTADO_LICENCIAMIENTO.value_counts()
+   st.write('Distribución por el estado de licenciamiento:')
+   st.bar_chart(df_el)
+   
    
 with tab4:
    text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
