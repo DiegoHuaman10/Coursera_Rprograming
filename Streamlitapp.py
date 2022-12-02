@@ -52,8 +52,7 @@ with tab2:
    df_gestion= df.TIPO_GESTION.value_counts()
    st.write('En el siguiente gráfico, se presenta una distribución de las universidades nacionales de acuerdo al tipo de gestión')
    st.bar_chart(df_gestion)
-   
-df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
+   df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
    df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
    st.write('**Licenciamiento en la gestión privada:**')
    st.bar_chart(df_gp)
