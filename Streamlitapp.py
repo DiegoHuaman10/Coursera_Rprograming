@@ -50,9 +50,8 @@ with tab1:
    st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
    url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
    file = pd.read_csv(url, sep= ',')
-   st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
-   st.bar_chart(file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
    file[file["PERIODO_LICENCIAMIENTO"]].nunique()
+   
 with tab2:
    st.write("Actualmente existen ....")
    df[df["TIPO_GESTION"]].nunique()
