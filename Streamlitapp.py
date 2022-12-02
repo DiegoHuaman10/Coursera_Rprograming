@@ -51,6 +51,7 @@ with tab1:
    url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
    file = pd.read_csv(url, sep= ',')
    st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
+   st.bar_chart(file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
 
 with tab2:
    st.write("Actualmente existen ....")
