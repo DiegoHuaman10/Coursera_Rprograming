@@ -48,13 +48,12 @@ tab1, tab2, tab3, tab4 = st.tabs(["**Periodo de licenciamiento**", "**Tipo de ge
 
 with tab1:
    st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
-   url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
    df_pl= df.PERIODO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_pl)
 
 with tab2:
    df_gestion= df.TIPO_GESTION.value_counts()
-   st.write('Distribución por el tipo de gestión:')
+   st.write('**Distribución por el tipo de gestión:**')
    st.bar_chart(df_gestion)
 
 with tab3:
@@ -64,11 +63,11 @@ with tab3:
    st.dataframe(df_region)
    
    df_tg= df_region.TIPO_GESTION.value_counts()
-   st.write('Distribución por el tipo de gestión:')
+   st.write('**Distribución por el tipo de gestión:**')
    st.bar_chart(df_tg)
    
    df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
-   st.write('Distribución por el estado de licenciamiento:')
+   st.write('**Distribución por el estado de licenciamiento:**')
    st.bar_chart(df_el)
    
    
