@@ -42,49 +42,47 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional.csv"
 df=pd.read_csv("LicenciamientoInstitucional.csv")
 
-col1,col2=st.columns(2)
-with col1:
-   if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
-      tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
-      with tab1:
-         st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
-         df_pl= df.PERIODO_LICENCIAMIENTO.value_counts()
-         st.bar_chart(df_pl)
-      with tab2:
-         df_gestion= df.TIPO_GESTION.value_counts()
-         st.write('**Distribución por el tipo de gestión:**')
-         st.bar_chart(df_gestion)
+if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
+   tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
+   with tab1:
+      st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
+      df_pl= df.PERIODO_LICENCIAMIENTO.value_counts()
+      st.bar_chart(df_pl)
+   with tab2:
+      df_gestion= df.TIPO_GESTION.value_counts()
+      st.write('**Distribución por el tipo de gestión:**')
+      st.bar_chart(df_gestion)
    
-         df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
-         df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
-         st.write('**Licenciamiento en la gestión privada:**')
-         st.bar_chart(df_gp)
+      df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
+      df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
+      st.write('**Licenciamiento en la gestión privada:**')
+      st.bar_chart(df_gp)
    
-         df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
-         df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
-         st.write('**Licenciamiento en la gestión pública:**')
-         st.bar_chart(df_gp)
+      df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
+      df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
+      st.write('**Licenciamiento en la gestión pública:**')
+      st.bar_chart(df_gp)
 #------------------------------------------------------------------
-with col2:
-   if st.button("**INFORMACIÓN POR BÚSQUEDA**"):
-      tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
-      with tab1:
-         st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
-         text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
-         df_region=df[df["DEPARTAMENTO"]==text_imput]
-         st.dataframe(df_region)
+
+if st.button("**INFORMACIÓN POR BÚSQUEDA**"):
+   tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
+   with tab1:
+      st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
+      text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
+      df_region=df[df["DEPARTAMENTO"]==text_imput]
+      st.dataframe(df_region)
    
-         df_tg= df_region.TIPO_GESTION.value_counts()
-         st.write('**Distribución por el tipo de gestión:**')
-         st.bar_chart(df_tg)
+      df_tg= df_region.TIPO_GESTION.value_counts()
+      st.write('**Distribución por el tipo de gestión:**')
+      st.bar_chart(df_tg)
    
-         df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
-         st.write('**Distribución por el estado de licenciamiento:**')
-         st.bar_chart(df_el)
-   
-      with tab2:
-         text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
-         df_univ=df[df["SIGLAS"]==text_imput]
-         st.dataframe(df_univ)
+      df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
+      st.write('**Distribución por el estado de licenciamiento:**')
+      st.bar_chart(df_el)
+      
+   with tab2:
+      text_imput=st.text_input("**Ingrese las SIGLAS del nombre de la universidad de su interés 👇 (Escribir en MAYÚSCULAS)**",)
+      df_univ=df[df["SIGLAS"]==text_imput]
+      st.dataframe(df_univ)
    
    
