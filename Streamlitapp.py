@@ -42,7 +42,7 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional.csv"
 df=pd.read_csv("LicenciamientoInstitucional.csv")
 
-st.subheader("Información general del licenciamiento")
+st.subheader("Información general del licenciamiento:")
 tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
 with tab1:
    st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
@@ -64,19 +64,20 @@ with tab2:
    st.bar_chart(df_gp)
 #------------------------------------------------------------------
 
-st.subheader("**Información por búsqueda**")
+st.subheader("**Información por búsqueda:**")
 tab1, tab2= st.tabs(["**Por regiones**", "**Por Universidad**"])
 with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
    df_region=df[df["DEPARTAMENTO"]==text_imput]
+   df_region.drop(["CODIGO_ENTIDAD","FECHA_INICIO_LICENCIAMIENTO", "FECHA_FIN_LICENCIAMIENTO"], axis=1)
    st.dataframe(df_region)
    
-   st.write("Se presenta una distribución de las universidad por el **_tipo de gestión_**")
+   st.write("Para la región",text_imput,",se presenta una distribución de las universidad por el **_tipo de gestión_**.")
    df_tg= df_region.TIPO_GESTION.value_counts()
    st.bar_chart(df_tg)
    
-   st.write("Además, se presenta una distribución del **_estado de licencimianto_** de dichas universidades")
+   st.write("Además, se presenta una distribución del **_estado de licencimianto_** de dichas universidades.")
    df_el= df_region.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_el)
       
