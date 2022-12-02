@@ -54,7 +54,7 @@ with tab2:
    st.write('**Distribución por el tipo de gestión:**')
    st.bar_chart(df_gestion)
    
-   df_gpriv=df[df["TIPO_GESTION"]]
+   df_gpriv=df["TIPO_GESTION"]
    st.dataframe(df_gpriv)
    
    
