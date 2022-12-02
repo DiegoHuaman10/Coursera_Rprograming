@@ -53,8 +53,8 @@ with tab1:
    st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
    #st.bar_chart(file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
    #contar cuantas unis hay con 6 años de periodo de licenciamiento
-   l = file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 6, axis = 1).sum()
-   st.write(l)
+   file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 6, axis = 1).sum()
+   
 with tab2:
    st.write("Actualmente existen ....")
 
