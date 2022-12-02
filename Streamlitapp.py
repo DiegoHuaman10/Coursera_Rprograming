@@ -47,7 +47,7 @@ st.dataframe(df)
 tab1, tab2, tab3, tab4 = st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**", "**Buscar por regiones**", "**Buscar por Universidad**"])
 
 with tab1:
-   st.write("El periodo de licenciamiento refiere a...")
+   st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. Existen periodos de 6, 8 y 10 años, ")
    url ="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
    file = pd.read_csv(url, sep= ',')
    st.line_chart(data=file, x='NOMBRE', y='PERIODO_LICENCIAMIENTO')
