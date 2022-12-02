@@ -38,9 +38,9 @@ file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
 
 #----------------------------------------------------------------------
-#url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
-#filename="LicenciamientoInstitucional.csv"
-#df=pd.read_csv("LicenciamientoInstitucional.csv")
+url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/LicenciamientoInstitucional.csv"
+filename="LicenciamientoInstitucional.csv"
+df=pd.read_csv("LicenciamientoInstitucional.csv")
 #st.dataframe(df)
 
 st.subheader("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**")
