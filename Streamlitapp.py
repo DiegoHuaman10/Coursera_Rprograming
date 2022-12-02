@@ -55,8 +55,7 @@ with tab1:
 
 with tab2:
    st.write("Actualmente existen ....")
-   count=df[df["TIPO_GESTION"].value_counts()] 
-   print(count)
+   df[df["TIPO_GESTION"]].value_counts() 
 
 with tab3:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
