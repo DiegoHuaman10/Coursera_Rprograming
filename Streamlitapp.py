@@ -54,8 +54,12 @@ with tab2:
    st.write('**Distribución por el tipo de gestión:**')
    st.bar_chart(df_gestion)
    
+   df_gpriv=df[df["TIPO_GESTION"]]
+   st.dataframe(df_gpriv)
+   
+   
 #------------------------------------------------------------------
-st.subheader("**OPPCIONES DE BÚSQUEDA**")
+st.subheader("**OPCIONES DE BÚSQUEDA**")
 tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
 with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
