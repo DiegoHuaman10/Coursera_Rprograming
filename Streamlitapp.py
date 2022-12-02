@@ -55,7 +55,7 @@ with tab1:
 
 with tab2:
    st.write("Actualmente existen ....")
-   count=df[df["TIPO_GESTION"]].value_counts() 
+   count=df[df["TIPO_GESTION"].value_counts()] 
    print(count)
 
 with tab3:
