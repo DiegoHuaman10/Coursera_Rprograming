@@ -55,7 +55,7 @@ with tab2:
    st.bar_chart(df_gestion)
    
 #------------------------------------------------------------------
-st.subheader("**OPCIONES DE BÚSQUEDA**")
+st.subheader("**OPPCIONES DE BÚSQUEDA**")
 tab1, tab2= st.tabs(["**Buscar por regiones**", "**Buscar por Universidad**"])
 with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
