@@ -42,27 +42,26 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional.csv"
 df=pd.read_csv("LicenciamientoInstitucional.csv")
 
-st.subheader("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**")
-tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
-with tab1:
-   st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
-   df_pl= df.PERIODO_LICENCIAMIENTO.value_counts()
-   st.bar_chart(df_pl)
-
-with tab2:
-   df_gestion= df.TIPO_GESTION.value_counts()
-   st.write('**Distribución por el tipo de gestión:**')
-   st.bar_chart(df_gestion)
+if st.button("**INFORMACIÓN GENERAL DEL LICENCIAMIENTO**"):
+   tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
+   with tab1:
+      st.write("El periodo de licenciamiento refiere al tiempo por el cual la universidad ha recibido el licenciamiento. El tiempo mínimo de licenciamiento es de 6 años, además, tambien hay periodos de 8 y 10 años. Se otorga la mayor cantidad de años a las universidades que impulsan proyectos de investigación, apoyan a sus docentes investigadores y buscan que un mayor número de estudiantes escriban artículos que puedan ser publicados en alguna revista.")
+      df_pl= df.PERIODO_LICENCIAMIENTO.value_counts()
+      st.bar_chart(df_pl)
+   with tab2:
+      df_gestion= df.TIPO_GESTION.value_counts()
+      st.write('**Distribución por el tipo de gestión:**')
+      st.bar_chart(df_gestion)
    
-   df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
-   df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
-   st.write('**Licenciamiento en la gestión privada:**')
-   st.bar_chart(df_gp)
+      df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
+      df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
+      st.write('**Licenciamiento en la gestión privada:**')
+      st.bar_chart(df_gp)
    
-   df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
-   df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
-   st.write('**Licenciamiento en la gestión pública:**')
-   st.bar_chart(df_gp)
+      df_gpúb=df[df["TIPO_GESTION"]=="PÚBLICO"]
+      df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
+      st.write('**Licenciamiento en la gestión pública:**')
+      st.bar_chart(df_gp)
    
 #------------------------------------------------------------------
 st.subheader("**OPCIONES DE BÚSQUEDA**")
