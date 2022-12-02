@@ -55,7 +55,7 @@ with tab2:
    st.bar_chart(df_gestion)
    
    #df_g=df["TIPO_GESTION"]
-   df_gpriv=df[df["TIPO_GESTION"]==PRIVADO]
+   df_gpriv=df[df["TIPO_GESTION"]=="PRIVADO"]
    df_gp=df_gpriv.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_gp)
    
