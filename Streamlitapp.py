@@ -55,8 +55,8 @@ with tab1:
    l=file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 6, axis=1).sum()
    J=file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 8, axis=1).sum()
    N=file.apply(lambda x: x['PERIODO_LICENCIAMIENTO'] == 10, axis=1).sum()
-   np.array[[l, J, N],
-            [6, 8, 10]]
+   np.array([[l, J, N],
+            [6, 8, 10]])
 with tab2:
    st.write("Actualmente existen ....")
    df[df["TIPO_GESTION"]].nunique()
