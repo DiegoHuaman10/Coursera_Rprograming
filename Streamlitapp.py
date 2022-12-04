@@ -38,19 +38,26 @@ with tab01:
    st.write(" EXISTENCIA DE OBJETIVOS ACADEMICOS, GRADOS Y TITULOS A OTORGAR, Y PLANES DE ESTUDIO CORRESPONDIENTE.")
    st.write(" La acción educativa requiere metas claras para los diversos miembros de la comunidad universitaria.  Estos deben ser parte de los planes de estudio. Los programas educativos deben poner en claro los procedimientos administrativos y los requisitos previos que todos los estudiantes deben seguir desde su ingreso a la universidad  hasta su graduación. Por lo tanto, la universidad debe contemplar que sus programas tengan metas, que haya una jerarquía de metas institucionales y que guarden coherencia entre ellas.")
 with tab02:
-   st.write("un presupuesto financiado y sustentado, coherente c")
+   st.write("OFERTA EDUCATIVA A CREARSE COMPATIBLE CON LOS FINES PROPUESTOS EN LOS INSTRUMENTOS DE PLANEAMIENTO.")
+   st.write()
 with tab03:
-   st.write("Elpo de ambientes, su dimensión, el mobiliario y el equipamiento que utilizan es diferente.")
+   st.write("INFRAESTRUCTURA Y EQUIPAMIENTO ADECUADO AL CUMPLIMIENTO DE SUS FUNCIONES (AULAS, BIBLIOTECAS, LABORATORIOS, ENTRE OTROS).")
+   st.write()
 with tab04:
-   st.write("La universambiente propicio para la creación de conocimiento.")
+   st.write("LÍNEAS DE INVESTIGACIÓN A SER DESARROLLADAS.")
+   st.write()
 with tab05:
-   st.write("El rol quepleto, en peducativos.")
+   st.write("VERIFICACIÓN DE LA DISPONIBILIDAD DE PERSONAL DOCENTE CALIFICADO CON NO MENOS DE 25% DE DOCENTES A TIEMPO COMPLETO.")
+   st.write()
 with tab06:
-   st.write("El periodo de")
+   st.write("VERIFICACIÓN DE LOS SERVICIOS EDUCACIONALES COMPLEMENTARIOS BÁSICOS (SERVICIO MÉDICO, SOCIAL, PSICOPEDAGÓGICO, DEPORTIVO, ENTRE OTROS).")
+   st.write()
 with tab07:
-   st.write("El periodo de")
+   st.write("EXISTENCIA DE MECANISMOS DE MEDIACIÓN E INSERCIÓN LABORAL (BOLSA DE TRABAJO U OTROS).")
+   st.write()
 with tab08:
-   st.write("El periodo de")
+   st.write("CBC  COMPLEMENTARIA: TRANSPARENCIA DE UNIVERSIDADES.")
+   st.write()
    
    
 #Ubicación de universidades por regiones
