@@ -35,15 +35,15 @@ st.image(CBC, use_column_width=True)
 st.subheader("Descripción de las CBC")
 tab01, tab02, tab03, tab04, tab05, tab06, tab07, tab08= st.tabs(["**Condición I**", "**Condición II**", "**Condición III**", "**Condición IV**", "**Condición V**", "**Condición VI**", "**Condición VII**", "**Condición VIII**"])
 with tab01:
-   st.write("La acción educativa requiere de objetivos claros por parte de los diversos actores de la comunidad universitaria. Estos deben formar parte de los planes de estudio. Asimismo, los programas académicos deben hacer explícito el procedimiento administrativo y las condiciones necesarias que todo estudiante debe cumplir desde su admisión hasta su graduación. Por lo tanto, la universidad debe prever que sus programas tengan objetivos, exista una jerarquía respecto a los objetivos institucionales y guarden coherencia entre ellos.")
+   st.write("a coherencia entre ellos.")
 with tab02:
-   st.write("El servicio educativo requiere recursos para financiar sus actividades. Las universidades deben tener un presupuesto financiado y sustentado, coherente con los planes de operación de los siguientes años.")
+   st.write("un presupuesto financiado y sustentado, coherente c")
 with tab03:
    st.write("Elpo de ambientes, su dimensión, el mobiliario y el equipamiento que utilizan es diferente.")
 with tab04:
-   st.write("La universidad debe desarrollar actividades de investigación bajo la dirección de sus docentes y estudiantes, de modo que se genere un ambiente propicio para la creación de conocimiento.")
+   st.write("La universambiente propicio para la creación de conocimiento.")
 with tab05:
-   st.write("El rol que tienen los docentes en la mejora del aprendizaje es fundamental. Esta interacción, si bien se da en el aula, es muy importante que también ocurra fuera de ella, de manera que el estudiante pueda absolver sus dudas o participar en la investigación. Para ello, la universidad debe contar como mínimo con el 25% de docentes a tiempo completo, en proporción suficiente con respecto al total de las horas de los programas educativos.")
+   st.write("El rol quepleto, en peducativos.")
 with tab06:
    st.write("El periodo de")
 with tab07:
@@ -53,6 +53,7 @@ with tab08:
    
    
 #Ubicación de universidades por regiones
+st.header("**Mapa de ubicación geográfica**")
 st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica.")
 url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/Ubicaci%C3%B3n.csv'
 file4 = pd.read_csv(url4, sep= ',')
