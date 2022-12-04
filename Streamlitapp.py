@@ -39,10 +39,10 @@ with tab01:
    st.write(" La acción educativa requiere metas claras para los diversos miembros de la comunidad universitaria.  Estos deben ser parte de los planes de estudio. Los programas educativos deben poner en claro los procedimientos administrativos y los requisitos previos que todos los estudiantes deben seguir desde su ingreso a la universidad  hasta su graduación. Por lo tanto, la universidad debe contemplar que sus programas tengan metas, que haya una jerarquía de metas institucionales y que guarden coherencia entre ellas.")
 with tab02:
    st.write("OFERTA EDUCATIVA A CREARSE COMPATIBLE CON LOS FINES PROPUESTOS EN LOS INSTRUMENTOS DE PLANEAMIENTO.")
-   st.write()
+   st.write("Los servicios educativos necesitan recursos para financiar sus actividades.Las universidades deben contar con un presupuesto de financiado y sustentado con el plan operativo para los años siguientes.")
 with tab03:
    st.write("INFRAESTRUCTURA Y EQUIPAMIENTO ADECUADO AL CUMPLIMIENTO DE SUS FUNCIONES (AULAS, BIBLIOTECAS, LABORATORIOS, ENTRE OTROS).")
-   st.write()
+   st.write("Los servicios educativos deben brindarse en un ambiente que cumpla con los requisitos mínimos de seguridad, capacidad y equipo necesario. La infraestructura de la universidad debe cumplir con la normatividad vigente. Aunque la educación ha sufrido grandes cambios debido a los avances tecnológicos,algunos servicios educativos han sido y serán proporcionados de forma  presencial. La universidad debe ser capaz de administrar todas sus instalaciones de acuerdo con la promoción de ventas.Para sus fines relacionados con los servicios de formación que prestan y sus antropometrías que determinarán el tipo de el tipo de ambientes el mobiliario y equipamiento  Los estudiantes universitarios deben tener un local de uso exclusivo  porque los lugares de educación básica  están diseñados para estudiantes de diferentes grupos de edad, por lo que tienen diferentes características de ambiente, equipamiento y mobiliario. También incluye requisitos previos que deben utilizarse para otras formas de educación superior.Realizar actividades de acuerdo a sus características de aprendizaje; por lo tanto, el tipo de ambiente, las dimensiones, el mobiliario y los equipos utilizados son diferentes.")
 with tab04:
    st.write("LÍNEAS DE INVESTIGACIÓN A SER DESARROLLADAS.")
    st.write()
