@@ -35,7 +35,7 @@ st.image(CBC, use_column_width=True)
 st.write("Descripción de las CBC: ")
 tab01, tab02, tab03, tab04, tab05, tab06, tab07, tab08= st.tabs(["**Condición I**", "**Condición II**", "**Condición III**", "**Condición IV**", "**Condición V**", "**Condición VI**", "**Condición VII**", "**Condición VIII**"])
 with tab01:
-   st.write("a coherencia entre ellos.")
+   st.write(" EXISTENCIA DE OBJETIVOS ACADEMICOS, GRADOS Y TITULOS A OTORGAR, Y PLANES DE ESTUDIO CORRESPONDIENTE.")
 with tab02:
    st.write("un presupuesto financiado y sustentado, coherente c")
 with tab03:
