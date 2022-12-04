@@ -32,7 +32,7 @@ CBC=Image.open("CBC.jpg")
 st.image(CBC, use_column_width=True)
 
 #Descripción de las condiciones básicas de calidad 
-st.write("Descripción de las CBC")
+st.write("Descripción de las CBC: ")
 tab01, tab02, tab03, tab04, tab05, tab06, tab07, tab08= st.tabs(["**Condición I**", "**Condición II**", "**Condición III**", "**Condición IV**", "**Condición V**", "**Condición VI**", "**Condición VII**", "**Condición VIII**"])
 with tab01:
    st.write("a coherencia entre ellos.")
