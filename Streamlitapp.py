@@ -61,8 +61,8 @@ with tab08:
    
 st.write("**_______________________________________________________________________________________**") 
 #Ubicación de universidades por regiones
-st.header("**Mapa de ubicación geográfica**")
-st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica.")
+st.subheader("Mapa de ubicación geográfica:")
+st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográf:ica.")
 url4='https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/main/Ubicaci%C3%B3n.csv'
 file4 = pd.read_csv(url4, sep= ',')
 st.map(file4)
@@ -72,6 +72,7 @@ url="https://raw.githubusercontent.com/DiegoHuaman10/Proyecto-Prograavanzada/mai
 filename="LicenciamientoInstitucional.csv"
 df=pd.read_csv("LicenciamientoInstitucional.csv")
 
+st.write("**_______________________________________________________________________________________**") 
 st.subheader("Información general del licenciamiento:")
 tab1, tab2= st.tabs(["**Periodo de licenciamiento**", "**Tipo de gestión**"])
 with tab1:
@@ -93,7 +94,7 @@ with tab2:
    df_gp=df_gpúb.ESTADO_LICENCIAMIENTO.value_counts()
    st.bar_chart(df_gp)
 #------------------------------------------------------------------
-
+st.write("**_______________________________________________________________________________________**") 
 st.subheader("**Información por búsqueda:**")
 tab1, tab2= st.tabs(["**Por regiones**", "**Por Universidad**"])
 with tab1:
