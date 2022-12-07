@@ -59,7 +59,7 @@ with tab08:
    st.write("**CBC  COMPLEMENTARIA: TRANSPARENCIA DE UNIVERSIDADES.**")
    st.write("Cada universidad debe divulgar información sobre su oferta académica así como la calidad de sus servicios prestados. Su finalidad es facilitar la toma de decisiones a los alumnos y sus familias.")
    
-st.write("**______________________________________________________________________________________________________**") 
+st.write("**_______________________________________________________________________________________________**") 
 #Ubicación de universidades por regiones
 st.header("**Mapa de ubicación geográfica**")
 st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica.")
