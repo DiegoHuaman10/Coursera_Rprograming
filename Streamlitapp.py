@@ -10,7 +10,7 @@ names.write("Somos estudiantes del V ciclo de Ingeniería de la Universidad Peru
 names.write("**- Diego Manuel Huamán Abad**")
 foto=Image.open("imagen.jpeg")
 names.image(foto)
-names.write("**- Verenice Sobrado Vergara**")
+names.write("**- Nayeli Verenice Sobrado Vergara**")
 foto=Image.open("hola.jpg")
 names.image(foto)
 names.write("**- Eyvind Francisco Herrera More**")
