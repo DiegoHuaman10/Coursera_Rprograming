@@ -35,31 +35,31 @@ st.image(CBC, use_column_width=True)
 st.write("Descripción de las CBC: ")
 tab01, tab02, tab03, tab04, tab05, tab06, tab07, tab08= st.tabs(["**Condición I**", "**Condición II**", "**Condición III**", "**Condición IV**", "**Condición V**", "**Condición VI**", "**Condición VII**", "**Condición VIII**"])
 with tab01:
-   st.write(" EXISTENCIA DE OBJETIVOS ACADEMICOS, GRADOS Y TITULOS A OTORGAR, Y PLANES DE ESTUDIO CORRESPONDIENTE.")
+   st.write("**EXISTENCIA DE OBJETIVOS ACADEMICOS, GRADOS Y TITULOS A OTORGAR, Y PLANES DE ESTUDIO CORRESPONDIENTE.**")
    st.write(" La acción educativa requiere metas claras para los diversos miembros de la comunidad universitaria.  Estos deben ser parte de los planes de estudio. Los programas educativos deben poner en claro los procedimientos administrativos y los requisitos previos que todos los estudiantes deben seguir desde su ingreso a la universidad  hasta su graduación. Por lo tanto, la universidad debe contemplar que sus programas tengan metas, que haya una jerarquía de metas institucionales y que guarden coherencia entre ellas.")
 with tab02:
-   st.write("OFERTA EDUCATIVA A CREARSE COMPATIBLE CON LOS FINES PROPUESTOS EN LOS INSTRUMENTOS DE PLANEAMIENTO.")
+   st.write("**OFERTA EDUCATIVA A CREARSE COMPATIBLE CON LOS FINES PROPUESTOS EN LOS INSTRUMENTOS DE PLANEAMIENTO.**")
    st.write("Los servicios educativos necesitan recursos para financiar sus actividades.Las universidades deben contar con un presupuesto  financiado y sustentado con el plan operativo para los años siguientes.")
 with tab03:
-   st.write("INFRAESTRUCTURA Y EQUIPAMIENTO ADECUADO AL CUMPLIMIENTO DE SUS FUNCIONES (AULAS, BIBLIOTECAS, LABORATORIOS, ENTRE OTROS).")
+   st.write("**INFRAESTRUCTURA Y EQUIPAMIENTO ADECUADO AL CUMPLIMIENTO DE SUS FUNCIONES (AULAS, BIBLIOTECAS, LABORATORIOS, ENTRE OTROS).**")
    st.write("Los servicios educativos deben brindarse en un ambiente que cumpla con los requisitos mínimos de seguridad, capacidad y equipo necesario. La infraestructura de la universidad debe cumplir con la normatividad vigente. Aunque la educación ha sufrido grandes cambios debido a los avances tecnológicos,algunos servicios educativos han sido y serán proporcionados de forma  presencial. La universidad debe ser capaz de administrar todas sus instalaciones de acuerdo con la promoción de ventas.Para sus fines relacionados con los servicios de formación que prestan y sus antropometrías que determinarán el tipo de el tipo de ambientes el mobiliario y equipamiento  Los estudiantes universitarios deben tener un local de uso exclusivo  porque los lugares de educación básica  están diseñados para estudiantes de diferentes grupos de edad, por lo que tienen diferentes características de ambiente, equipamiento y mobiliario. También incluye requisitos previos que deben utilizarse para otras formas de educación superior.Realizar actividades de acuerdo a sus características de aprendizaje; por lo tanto, el tipo de ambiente, las dimensiones, el mobiliario y los equipos utilizados son diferentes.")
 with tab04:
-   st.write("LÍNEAS DE INVESTIGACIÓN A SER DESARROLLADAS.")
+   st.write("**LÍNEAS DE INVESTIGACIÓN A SER DESARROLLADAS.**")
    st.write("Las universidades deben realizar actividades de investigación bajo la dirección de profesores y estudiantes, creando así un ambiente propicio para la creación de conocimiento.")
 with tab05:
-   st.write("VERIFICACIÓN DE LA DISPONIBILIDAD DE PERSONAL DOCENTE CALIFICADO CON NO MENOS DE 25% DE DOCENTES A TIEMPO COMPLETO.")
+   st.write("**VERIFICACIÓN DE LA DISPONIBILIDAD DE PERSONAL DOCENTE CALIFICADO CON NO MENOS DE 25% DE DOCENTES A TIEMPO COMPLETO.**")
    st.write("El papel de los docentes en la mejora del aprendizaje es muy importante. Si bien esta interacción tiene lugar en el aula, también es importante fuera del aula, ya que permite que los estudiantes se absuelvan de  dudas o participen en las investigaciones. Para ello, las universidades deben contar con al menos un 25% de personal docente a tiempo completo, que es un porcentaje suficiente del total de programas de estudio.")
 with tab06:
-   st.write("VERIFICACIÓN DE LOS SERVICIOS EDUCACIONALES COMPLEMENTARIOS BÁSICOS (SERVICIO MÉDICO, SOCIAL, PSICOPEDAGÓGICO, DEPORTIVO, ENTRE OTROS).")
+   st.write("**VERIFICACIÓN DE LOS SERVICIOS EDUCACIONALES COMPLEMENTARIOS BÁSICOS (SERVICIO MÉDICO, SOCIAL, PSICOPEDAGÓGICO, DEPORTIVO, ENTRE OTROS).**")
    st.write("La educación es un servicio constante y versátil. Este servicio forma parte de todo lo gestionado que complemente o facilite aspectos de la formación. De esta manera, las universidades deben ser capaces de proporcionar a los estudiantes ofertas de educación complementaria satisfactorias.")
 with tab07:
-   st.write("EXISTENCIA DE MECANISMOS DE MEDIACIÓN E INSERCIÓN LABORAL (BOLSA DE TRABAJO U OTROS).")
+   st.write("**EXISTENCIA DE MECANISMOS DE MEDIACIÓN E INSERCIÓN LABORAL (BOLSA DE TRABAJO U OTROS).**")
    st.write("Uno de los objetivos de las universidades modernas es preparar profesionales capaces de ingresar al mercado a trabajar. Con esta titulación, los estudiantes deberán ser capaces de realizar prácticas preprofesionales para facilitar su integración progresiva en el mercado laboral.")
 with tab08:
-   st.write("CBC  COMPLEMENTARIA: TRANSPARENCIA DE UNIVERSIDADES.")
+   st.write("**CBC  COMPLEMENTARIA: TRANSPARENCIA DE UNIVERSIDADES.**")
    st.write("Cada universidad debe divulgar información sobre su oferta académica así como la calidad de sus servicios prestados. Su finalidad es facilitar la toma de decisiones a los alumnos y sus familias.")
    
-   
+st.write("**________________________________________________________________________________________________________________________________**") 
 #Ubicación de universidades por regiones
 st.header("**Mapa de ubicación geográfica**")
 st.write("En el siguiente mapa, se muestra las universidades Peruanas de acuerdo a su ubicación geográfica.")
