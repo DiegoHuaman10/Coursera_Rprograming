@@ -96,7 +96,7 @@ with tab2:
 #------------------------------------------------------------------
 st.write("**_______________________________________________________________________________________**") 
 st.subheader("**Información por búsqueda:**")
-tab1, tab2= st.tabs(["**Por regiones**", "**Por Universidad**"])
+tab1, tab2= st.tabs(["**Por regiones**", "**Por universidad**"])
 with tab1:
    st.write("En la actualidad, en cada región del Perú, existe al menos una a más universidades públicas o privadas. Lo cual significa, que cada habitante tiene mayor acceso a la educación, así como también la oportunidad de estudiar más cerca a sus hogares.")
    text_imput=st.text_input("**Ingrese la región para conocer qué universidades se encuentran en el lugar indicado👇 (Escribir en MAYÚSCULAS)**",)
