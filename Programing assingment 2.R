@@ -1,29 +1,28 @@
 
 # Create a special "array" object that caches its inverse.
-makeCacheMatrix <- function(m = matrix()) {
-  matriz <- m
+makeCacheMatrix <- function(ma = matrix()) {
+  matriz <- ma
   cache <- NULL
-  set <- function(mat) {
-    matriz <<- mat
+  set <- function(matri) {
+    matriz <<- matri
     cache <<- NULL
   }
   
-  # Función para obtener la matriz Function for get matrix
+  #Function to get the matrix
   get <- function() matriz
   
-  # Función para calcular la inversa de la matriz
+  # Function to calculate the inverse of the matrix
   cacheSolve <- function() {
     if (!is.null(cache)) {
-      message("Recuperando inversa desde la caché")
+      message("Retrieving the inverse from the cache")
       return(cache)
     }
-    # Calcular la inversa
     inversa <- solve(matriz)
     cache <<- inversa
     inversa
   }
   
-  # Devolver las funciones como una lista
+  # Return the functions as a list
   list(set = set, get = get, cacheSolve = cacheSolve)
 }
 
